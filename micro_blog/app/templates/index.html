@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    
+    
+        {% extends "base.html" %}
+
+        {% block content %} 
+
+            <h1>Hola! {{ user.username }}!</h1>
+            {% for post in posts %}
+            <div><p>{{post.author.username}} dice: <b>{{post.body}}</b></p></div>
+            {%endfor%}
+
+        {% endblock %}
+
+    
+</html>
